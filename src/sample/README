@@ -1,0 +1,10 @@
+1. Make sure all 3 required files are in the same package: a Main file, a Controller file, an fxml file
+
+2. Make sure the package name is consistent through all the files
+
+3. Make sure to add the javafx-sdk-11.0.2/lib as a library to the program
+File -> Project Structure -> Libraries tab, then add the lib folder
+
+4. Make sure your Configuration file to run the program is set up:
+Main class: whatever the name of the class with the main method is. ex: sample.Main
+VM options: --module-path /..path../..to../javafx-sdk-11.0.2/lib  --add-modules javafx.controls,javafx.fxml

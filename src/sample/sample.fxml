@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Circle fx:id="bigCircle" fill="#bfe0ff" layoutX="308.0" layoutY="243.0" radius="146.0" strokeType="INSIDE">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false" startX="1.0">
+               <stops>
+                  <Stop color="#1a008d" />
+                  <Stop color="#1a008d" offset="0.0074487895716946" />
+                  <Stop color="#940000" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Circle>
+      <TextField fx:id="legOneLength" layoutX="205.0" layoutY="44.0" prefHeight="4.0" prefWidth="68.0" />
+      <TextField fx:id="legTwoLength" layoutX="340.0" layoutY="44.0" prefHeight="4.0" prefWidth="68.0" />
+      <Text layoutX="223.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leg 1" />
+      <Text layoutX="357.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leg 2" />
+      <Text fx:id="errorTextBox" fill="#ff0707" layoutX="162.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="409.2060546875" />
+      <Button fx:id="SubmitButton" layoutX="494.0" layoutY="282.0" mnemonicParsing="false" text="Submit" />
+      <Canvas fx:id="canvas" height="200.0" layoutX="208.0" layoutY="143.0" width="200.0" />
+      <Button fx:id="ClearButton" layoutX="494.0" layoutY="323.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="62.0" text="Clear" />
+      <Text fx:id="numTooBig" layoutX="14.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="please do not put in a number larger than 175" wrappingWidth="130.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="circleColor" layoutX="480.0" layoutY="359.0" mnemonicParsing="false" text="Circle Color" />
+   </children>
+</AnchorPane>
